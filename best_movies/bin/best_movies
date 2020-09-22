@@ -1,4 +1,0 @@
-#!/usr/bin/env ruby 
-
- require './lib/best_movies'
-BestMovies::CLI.new.call 

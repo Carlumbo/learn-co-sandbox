@@ -1,12 +1,18 @@
-class ApplicationController < Sinatra::Base 
-  
+
+require_relative '../../config/environment'
+
+class ApplicationController < Sinatra::Base
+
+
   configure do 
     set :public_folder, 'public'
     set :views, 'app/views'
+    enable :sessions
+    set  :session_secret, "batman"
   end 
   
-  get '/' do
-    "Hello world"
+  get '/' do 
+  "why wont this work?"
   end 
-  
-end 
+
+end
